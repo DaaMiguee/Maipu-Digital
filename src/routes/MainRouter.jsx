@@ -6,7 +6,6 @@ const MainRouter = () => {
     return (
         <Router>
             <Routes>
-
             </Routes>
         </Router>
     )

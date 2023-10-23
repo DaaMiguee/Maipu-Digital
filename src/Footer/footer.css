@@ -1,0 +1,81 @@
+.Footer__container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.Footer__columnas{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+#maipu__logo{
+    width: 149px;
+    flex-shrink: 0;
+}
+
+.maipu__text__derechos{
+color: #9C9C9C;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+width: 385px;
+height: 50px;
+flex-shrink: 0;
+}
+
+.maipu__icon__redes{
+    width: 30px;
+    flex-shrink: 0;
+}
+
+.Footer__columna__uno{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Footer__columna__dos{
+    display: flex;
+    
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+padding-bottom: 40px;
+color: #9C9C9C;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.navegacion{
+    margin-right: 4rem;
+    margin-left: 8rem;
+
+}
+
+h3{
+    margin-bottom: 2rem;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.navegacion__h3, .contacto__h3{
+    color: #00578E;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
