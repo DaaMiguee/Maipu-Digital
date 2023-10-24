@@ -135,3 +135,14 @@
 .services_section .cards_container .art_3{
     background-color: #007FCF;
 }
+
+
+/*------ Responsive ------*/
+
+@media screen and (max-width: 1300px){
+    .services_section{
+        /* padding: 105px 120px 100px; */
+        padding: 84px 96px 80px;
+
+    }
+}

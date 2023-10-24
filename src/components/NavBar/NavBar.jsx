@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './navbar.css'
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     const [isActive, setIsActive] = useState(false);
@@ -7,7 +8,7 @@ const NavBar = () => {
         setIsActive(!isActive)
     }
 
-    const navRef = useRef(null);
+    const navRef = useRef();
     useEffect(() => {
         const handleClick = (event) => {
             if (navRef.current && !navRef.current.contains(event.target)) {
@@ -24,7 +25,7 @@ const NavBar = () => {
         <nav className='nav' ref={navRef}>
             <div className='nav_menu'>
                 <div className='logo_container'>
-                    <a href="/">
+                    <Link to="/">
                         <svg xmlns="http://www.w3.org/2000/svg" width="74" height="40" viewBox="0 0 74 40" fill="none">
                             <g clip-path="url(#clip0_5_22)">
                                 <path d="M20.254 39.9714C20.4538 39.6904 20.6172 39.4667 20.7781 39.2404C27.2933 30.1509 33.8059 21.064 40.316 11.9719C40.4483 11.7872 40.578 11.7013 40.8167 11.7039C47.9599 11.7586 55.103 11.808 62.2461 11.8522C62.804 11.8548 63.3385 11.9173 63.7977 12.2815C63.9145 12.3751 64.0027 12.4714 64.0728 12.6041C64.3737 13.1764 64.4723 13.7747 64.4749 14.4277C64.4905 18.3897 64.5398 22.3543 64.5683 26.3163C64.5709 26.795 64.4879 27.2659 64.27 27.7029C63.8885 28.4651 63.2061 28.7851 62.42 28.7929C57.734 28.8345 53.048 28.8475 48.362 28.871C45.7388 28.884 43.1156 28.8996 40.4924 28.9256C40.22 28.9282 40.1473 28.8632 40.1473 28.5848C40.1395 24.217 40.1214 19.8465 40.1058 15.4787C40.1058 15.3694 40.1058 15.2601 40.1058 15.065C39.9864 15.2263 39.9242 15.307 39.8645 15.3902C37.4852 18.8059 35.1085 22.2242 32.7265 25.6399C32.602 25.8195 32.5475 25.9963 32.5449 26.2149C32.5294 29.576 32.5086 32.9344 32.4749 36.2955C32.4723 36.5713 32.5397 36.6363 32.8122 36.6363C42.5162 36.6129 52.2203 36.5999 61.9244 36.5843C63.6991 36.5817 65.4609 36.4698 67.2045 36.0822C69.7914 35.5073 71.2366 33.8684 71.727 31.3033C72.0099 29.8309 72.1759 28.3455 72.1733 26.8444C72.1655 22.1644 72.1863 17.4818 72.1552 12.8018C72.1448 11.1811 71.8516 9.59676 71.1381 8.11914C70.1599 6.0952 68.4993 4.95056 66.3716 4.40946C65.3208 4.14151 64.2492 4.05046 63.1672 4.04265C57.5368 4.00103 51.9089 3.95941 46.2785 3.91779C46.2162 3.91779 46.154 3.91779 46.0943 3.91779C46.0372 3.81113 46.1202 3.75389 46.1592 3.69146C46.7767 2.62226 47.402 1.55826 48.0117 0.483862C48.1207 0.293955 48.2375 0.234122 48.4477 0.23152C55.2172 0.184694 61.9866 0.130064 68.7587 0.0780345C70.4063 0.0650272 72.0566 0.0546214 73.7042 0.0312082C73.9377 0.0286068 73.9948 0.0884403 73.9948 0.322571C73.9844 13.4495 73.9792 26.5791 73.9844 39.706C73.9844 40.013 73.8417 39.9948 73.6315 39.9948C58.7744 39.9896 43.9174 39.987 29.0603 39.9818C26.1465 39.9818 23.2352 39.9818 20.2488 39.9818L20.254 39.9714Z" fill="white" />
@@ -36,7 +37,7 @@ const NavBar = () => {
                                 </clipPath>
                             </defs>
                         </svg>
-                    </a>
+                    </Link>
                 </div>
                 <div className={`menu_toggle ${isActive ? "active" : ""}`} onClick={toggleMenu}>
                     <div className="lines"></div>
@@ -47,21 +48,20 @@ const NavBar = () => {
             <div className={`collapse ${isActive ? "expanded" : ""}`}>
                 <ul className='navbar_nav'>
                     <li className='nav_item'>
-                        <a href="/">Inicio</a>
+                        <Link to="/">Inicio</Link>
                     </li>
                     <li className='nav_item'>
-                        <a href="#">Nosotros</a>
+                        <Link to="#">Nosotros</Link>
                     </li>
                     <li className='nav_item'>
-                        <a href="#">Servicios</a>
-                        {/* <Link to="/#services">Servicios</Link> */}
+                        <Link to="#">Servicios</Link>
                     </li>
                     <li className='nav_item'>
-                        <a href="#">Productos</a>
+                        <Link to="#">Productos</Link>
                     </li>
                 </ul>
             </div>
-            <a href="#" className='contact_btn'>Contáctanos</a>
+            <Link className='contact_btn' to="#">Contáctanos</Link>
         </nav>
     )
 }

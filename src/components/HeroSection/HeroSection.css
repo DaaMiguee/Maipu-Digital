@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-bottom: 90px;
+    animation: fadeleft 1s ease-in-out forwards;
 }
 .hero_section .content_block .text_container{
     display: flex;
@@ -142,6 +143,10 @@
     line-height: normal;
 }
 
+.hero_section .banner_container{
+    animation: faderight 1s ease-in-out forwards;
+    z-index: -1;
+}
 .hero_section .banner_container div{
     margin-top: 120px;
     margin-left: 87px;
@@ -182,4 +187,124 @@
 }
 .hero_section .banner_container .img_container2 .home_banner{
     height: 680px;
+}
+
+/*------ Responsive ------*/
+
+@media screen and (max-width: 1300px) {
+    /* -20% */
+    .hero_section{
+        padding: 96px 0 0 96px;
+        margin-bottom: -32px;
+
+    }
+    .hero_section .content_block{
+        padding-bottom: 72px;
+    }
+    .hero_section .content_block .text_container{
+        gap: 32.8px;
+    }
+    .hero_section .content_block .text_container .text_title{
+        width: 464px;
+        height: 218.4px;
+    }
+    .hero_section .content_block .text_container .text_title h1{
+        font-size: 57px;
+    }
+    .hero_section .content_block .text_container .text_title h1 span{
+        font-size: 57px;
+    }
+    .hero_section .content_block .text_container .text_subtitle{
+        width: 376px;
+        height: 20.8px;
+    }
+    .hero_section .content_block .text_container .text_subtitle p{
+        font-size: 16px;
+    }
+    .hero_section .content_block .button_container{
+        gap: 24px;
+        margin-top: 72px;
+        margin-bottom: 40px;
+    }
+    .hero_section .content_block .button_container a{
+        /* sin cambios */
+        font-size: 16px;
+    }
+    .hero_section .content_block .button_container .btn_1{
+        width: 200px;
+        height: 48px;
+        padding: 16px 24px;
+    }
+    .hero_section .content_block .button_container .btn_2{
+        width: 168px;
+        height: 48px;
+        gap: 8px;
+    }
+    .hero_section .content_block .users_container{
+        gap: 14.4px;
+    }
+    .hero_section .content_block .users_container .users_sub_container{
+        padding-left: 16px;
+    }
+    .hero_section .content_block .users_container .users_sub_container .user_circle{
+        /* sin camibios */
+        width: 60px;
+        height: 60px;
+        margin-left: -20px;
+    }
+    .hero_section .content_block .users_container .users_desc span{
+        /* sin camibios */
+        font-size: 24px;
+    }
+    .hero_section .content_block .users_container .users_desc p{
+        /* sin camibios */
+        font-size: 16px;
+    }
+    
+    .hero_section .banner_container div{
+        margin-top: 96px;
+        margin-left: 69.6px;
+        width: 392px;
+        height: 392px;
+        margin-right: 130.4px;
+    }
+    .hero_section .banner_container div .big_circle{
+        width: 392px;
+        height: 392px;
+    }
+    .hero_section .banner_container div .small_circle{
+        right: -34.4px;
+        top: 37.6px;
+        width: 106.4px;
+        height: 106.4px;
+    }
+    .hero_section .banner_container .img_container2{
+        top: -56px;
+        left: -160px;
+    }
+    .hero_section .banner_container .img_container2 .home_banner{
+        height: 544px;
+    }
+}
+
+/*------ Animations ------*/
+@keyframes fadeleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+        }
+}
+@keyframes faderight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

@@ -17,9 +17,7 @@
     display: none;
 }
 .nav .nav_menu .logo_container{
-    height: 45px;
-    border-radius: 50%;
-    margin-right: 50px;
+    height: 100%;
     display: inlines-block;
 }
 .nav .collapse .navbar_nav{
@@ -27,9 +25,7 @@
     gap: 30px;
 }
 .nav .collapse .navbar_nav .nav_item{
-    font-size: 16px;
     list-style: none;
-    font-weight: 500;
 }
 .nav .collapse .navbar_nav .nav_item a{
     text-decoration: none;
@@ -51,7 +47,7 @@
 .nav .contact_btn{
     text-decoration: none;
     color: #fff;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -70,7 +66,30 @@
     }
 }
 
-/* ------ Responsive ------ */
+
+/*------ Responsive ------*/
+
+@media screen and (max-width: 1300px){
+    /* -20% */
+    .nav{
+        height: 80px;
+        padding-left: 96px;
+        padding-right: 96px;
+    }
+    .nav .nav_menu .logo_container a svg{
+        height: 32px;
+        width: 59.2px;
+    }
+    .nav .collapse .navbar_nav{
+        gap: 24px;
+    }
+    .nav .contact_btn{
+        height: 32px;
+        padding: 16px 24px;
+    }
+}
+
+
 @media screen and (max-width :1000px ){
     .nav{
         display: block;
