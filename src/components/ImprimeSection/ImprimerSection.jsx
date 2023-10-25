@@ -1,5 +1,5 @@
 import "./ImprimeSection.css"
-import mujerConCamara from "../assets/mujer_con_camara.png"
+import mujerConCamara from "../../assets/mujer_con_camara.png"
 
 function ImprimeSection(){
     return <>

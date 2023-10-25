@@ -1,8 +1,8 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection/HeroSection'
 import ServicesSection from '../components/ServicesSection/ServicesSection'
-import ImprimeSection from "../ImprimeSection/ImprimerSection"
-import Contact from "../Contact/Contact"
+import ImprimeSection from "../components/ImprimeSection/ImprimerSection"
+import Contact from "../components/Contact/Contact"
 const Home = () => {
   return (
     <div>

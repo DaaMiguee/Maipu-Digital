@@ -1,5 +1,5 @@
-import logo from "../assets/maipu-logo.png"
-import "../Footer/footer.css"
+import logo from "../../assets/maipu-logo.png"
+import "./footer.css"
 function Footer(){
     return <>
    <div className="Footer__container"> 
@@ -42,7 +42,7 @@ function Footer(){
         {/* lista 1 */}
 <div className="navegacion">
     <h3 className="navegacion__h3">Navegacion</h3>
-        <ul>
+ <ul className="footer__ul">
     <li className="footer__li">Inicio</li>
     <li className="footer__li">Nosotros</li>
     <li className="footer__li">Servicios</li>
@@ -52,7 +52,7 @@ function Footer(){
      {/* lista 2 */}
 <div className="contacto">
      <h3 className="contacto__h3">Contacto</h3>
-        <ul>
+<ul className="footer__ul">
     <li className="footer__li">261-6815426</li>
     <li className="footer__li">+54 261-6815426</li>
     <li className="footer__li">romerocybertec@gmail.com</li>
