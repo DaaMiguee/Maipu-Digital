@@ -54,14 +54,14 @@ const NavBar = () => {
                         <Link to="#">Nosotros</Link>
                     </li>
                     <li className='nav_item'>
-                        <Link to="#">Servicios</Link>
+                        <Link to="/services">Servicios</Link>
                     </li>
                     <li className='nav_item'>
                         <Link to="#">Productos</Link>
                     </li>
                 </ul>
             </div>
-            <Link className='contact_btn' to="#">Contáctanos</Link>
+            <Link className='contact_btn' to="/contact">Contáctanos</Link>
         </nav>
     )
 }
