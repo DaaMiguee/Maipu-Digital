@@ -60,28 +60,27 @@ flex-shrink: 0;
 }
 
 .habla{
-background-color: #00578E;
-color: #fff;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00578E;
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .venta{
-background-color: #E38C26;
-color: #fff;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-
-
-
-button{                               
-    text-align: center;
-  vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E38C26;
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 
