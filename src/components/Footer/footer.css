@@ -86,7 +86,7 @@
   line-height: normal;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .navegacion,
   .contacto {
     display: block;

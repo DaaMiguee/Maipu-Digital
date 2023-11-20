@@ -1,8 +1,30 @@
-.contactPageForm__map{
+.contactPageForm__map {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  width: 350px;
+  height: 166px;
+  border: none;
+  border-radius: 30px;
+}
+
+@media (min-width: 768px) {
+  .contactPageForm__map {
     margin-top: 40px;
     margin-bottom: 70px;
-    width:1200px;
+    width: 700px;
     height: 370px;
     border: none;
     border-radius: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contactPageForm__map {
+    margin-top: 40px;
+    margin-bottom: 70px;
+    width: 1200px;
+    height: 370px;
+    border: none;
+    border-radius: 30px;
+  }
 }
