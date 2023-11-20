@@ -24,7 +24,7 @@ const ServicesSection = () => {
             <section className='cards_container'>
                 <article className='article art_1'>
                     <section className='art_header'>
-                        <h3>Computadores</h3>
+                        <h3>Computadoras</h3>
                         <Link to="#">
                             {ArrowUpRight}
                         </Link>
