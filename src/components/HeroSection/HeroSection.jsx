@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './HeroSection.css'
 import banner from '../../images/hero-img.webp'
 import userimg1 from '../../images/Ellipse-2.svg'
@@ -6,10 +6,34 @@ import userimg2 from '../../images/Ellipse-3.svg'
 import userimg3 from '../../images/Ellipse-4.svg'
 import userimg4 from '../../images/Ellipse-5.svg'
 import { Link } from 'react-router-dom'
+import Modal from 'react-bootstrap/Modal';
+import imgwsp from "../../images/wsp.png"
 
 const HeroSection = () => {
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+    const sendSmsWsp = () => {
+        const message = "Hola, ¿hay un asesor disponible para ayudarme con mis preguntas?"
+        const whatsappLink = `https://api.whatsapp.com/send?phone=2616815426&text=${encodeURIComponent(message)}`;
+        window.open(whatsappLink);
+    }
+
     return (
         <section className='hero_section'>
+            <Modal dialogClassName="wp-modal" show={show} onHide={handleClose} centered>
+                <Modal.Header>
+                    <img src={imgwsp} alt="" />
+                </Modal.Header>
+                <Modal.Body>
+                    Serás redirigido a nuestro chat de Whatsapp, alguien de nuestro equipo te asesorará en tu solicitud
+                </Modal.Body>
+                <Modal.Footer>
+                    <Link className='modal_close' onClick={() => { handleClose(); sendSmsWsp() }}>
+                        Entendido
+                    </Link>
+                </Modal.Footer>
+            </Modal>
             <div className='content_block'>
                 <div className='text_container'>
                     <div className='text_title'>
@@ -20,7 +44,7 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className='button_container'>
-                    <Link className='btn_1' to="#">Habla con nosotros</Link>
+                    <Link className='btn_1' to="#" onClick={handleShow}>Habla con nosotros</Link>
                     <Link className='btn_2' to="#">Deja un mensaje</Link>
                 </div>
                 <div className='users_container'>
@@ -59,7 +83,7 @@ const HeroSection = () => {
                         <circle cx="245" cy="245" r="245" fill="#E38C26" />
                     </svg>
                     <svg className='small_circle' xmlns="http://www.w3.org/2000/svg" width="133" height="133" viewBox="0 0 133 133" fill="none">
-                        <circle cx="66.5" cy="66.5" r="64" fill="#00578E" stroke="white" stroke-width="5" />
+                        <circle cx="66.5" cy="66.5" r="64" fill="#00578E" stroke="white" strokeWidth="5" />
                     </svg>
                 </div>
                 <div className='img_container2'>
