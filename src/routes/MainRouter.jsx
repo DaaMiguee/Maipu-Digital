@@ -1,9 +1,7 @@
 import React, { Suspense, lazy } from 'react'
 import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
 import NavBar from '../components/NavBar/NavBar';
-import Home from '../pages/Home'
 import Footer from "../components/Footer/Footer"
-
 import Loader from '../components/Loader/Loader';
 
 const MainRouter = () => {
