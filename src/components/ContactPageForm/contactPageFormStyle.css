@@ -1,0 +1,312 @@
+.contacPageForm__layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.contactPageForm__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.contactPageForm__text_area {
+  width: 326px;
+  height: 170px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #ced0c2;
+  background: #f9f9f6;
+  box-shadow: 0px -16px 32px 0px rgba(33, 34, 28, 0.05) inset;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.contactPageForm {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24.08px;
+  padding-bottom: 24.08px;
+  align-items: flex-start;
+}
+
+.contactPageForm__label {
+  line-height: normal;
+  width: 304.301px;
+  height: 20.408px;
+  flex-shrink: 0;
+  font-weight: 400;
+  color: #21221c;
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 8.98px;
+}
+
+.contactPageForm__input {
+  width: 326px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #ced0c2;
+  background: #f9f9f6;
+  box-shadow: 0px -8px 16px 0px rgba(33, 34, 28, 0.05) inset;
+  padding-left: 10px;
+}
+
+.contactPageForm__text_area__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contactPageForm__label__text_area {
+  line-height: normal;
+  width: 304.301px;
+  height: 20.408px;
+  flex-shrink: 0;
+  font-weight: 400;
+  color: #21221c;
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 8.98px;
+}
+
+.contactPageForm__btn {
+  width: 350px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #e38c26;
+  border: none;
+}
+
+.contactPageForm__h1 {
+  align-self: baseline;
+  width: 370px;
+  text-align: center;
+}
+.contactPageForm__btn__span {
+  color: #fff;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .contacPageForm__layout {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    flex-direction: column;
+  }
+  .contactPageForm__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 770px;
+    height: 800px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .contactPageForm__text_area {
+    width: 750px;
+    height: 221.224px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #ced0c2;
+    background: #f9f9f6;
+    box-shadow: 0px -16px 32px 0px rgba(33, 34, 28, 0.05) inset;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .contactPageForm {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24.08px;
+    padding-bottom: 24.08px;
+  }
+
+  .contactPageForm__label {
+    line-height: normal;
+    width: 304.301px;
+    height: 20.408px;
+    flex-shrink: 0;
+    font-weight: 400;
+    color: #21221c;
+    font-size: 18px;
+    font-style: normal;
+    margin-bottom: 8.98px;
+  }
+
+  .contactPageForm__input {
+    width: 750px;
+    height: 35.918px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #ced0c2;
+    background: #f9f9f6;
+    box-shadow: 0px -8px 16px 0px rgba(33, 34, 28, 0.05) inset;
+    padding-left: 10px;
+  }
+
+  .contactPageForm__text_area__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactPageForm__label__text_area {
+    margin-bottom: 8.98px;
+    color: #21221c;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 127.09px;
+    height: 20.408px;
+    flex-shrink: 0;
+  }
+
+  .contactPageForm__btn {
+    width: 750px;
+    height: 50.612px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #e38c26;
+    border: none;
+  }
+
+  .contactPageForm__h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: -webkit-fill-available;
+  }
+  .contactPageForm__btn__span {
+    color: #fff;
+    text-align: center;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-right: 10px;
+  }
+
+  .contactPageForm__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacPageForm__layout {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    flex-direction: column;
+  }
+  .contactPageForm__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 800px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .contactPageForm__text_area {
+    width: 995.242px;
+    height: 221.224px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #ced0c2;
+    background: #f9f9f6;
+    box-shadow: 0px -16px 32px 0px rgba(33, 34, 28, 0.05) inset;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .contactPageForm {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24.08px;
+    padding-bottom: 24.08px;
+  }
+
+  .contactPageForm__label {
+    line-height: normal;
+    width: 304.301px;
+    height: 20.408px;
+    flex-shrink: 0;
+    font-weight: 400;
+    color: #21221c;
+    font-size: 18px;
+    font-style: normal;
+    margin-bottom: 8.98px;
+  }
+
+  .contactPageForm__input {
+    width: 995.242px;
+    height: 35.918px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #ced0c2;
+    background: #f9f9f6;
+    box-shadow: 0px -8px 16px 0px rgba(33, 34, 28, 0.05) inset;
+    padding-left: 10px;
+  }
+
+  .contactPageForm__text_area__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactPageForm__label__text_area {
+    margin-bottom: 8.98px;
+    color: #21221c;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 127.09px;
+    height: 20.408px;
+    flex-shrink: 0;
+  }
+
+  .contactPageForm__btn {
+    width: 995.242px;
+    height: 50.612px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #e38c26;
+    border: none;
+  }
+
+  .contactPageForm__h1 {
+    align-self: baseline;
+    padding-left: 100px;
+    width: 370px;
+  }
+  .contactPageForm__btn__span {
+    color: #fff;
+    text-align: center;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-right: 10px;
+  }
+}
