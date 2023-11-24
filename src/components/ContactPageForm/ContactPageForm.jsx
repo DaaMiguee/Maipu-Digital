@@ -12,9 +12,9 @@ function ContactPageForm() {
           <div>
             <form
               className="contactPageForm__form"
-              action="#"
-              method="POST"
               encType="multipart/form-data"
+              action="https://formsubmit.co/maipudigitalmza@gmail.com"
+              method="POST"
             >
               <div className="contactPageForm">
                 <label className="contactPageForm__label" htmlFor="name">
@@ -88,6 +88,12 @@ function ContactPageForm() {
                     />
                   </svg>
                 </button>
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://maipudigital.netlify.app/contacto"
+                ></input>
+                <input type="hidden" name="_captcha" value="false"></input>
               </div>
             </form>
           </div>
