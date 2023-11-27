@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 105px 0 0;
+  padding: 105px 120px 100px;
 
   justify-content: center;
 }
@@ -157,14 +157,14 @@
 .services_section .cards_container .art_1 {
   background-color: #007fcf;
   transition: all 0.3s ease;
-  &:hover{
+  &:hover {
     transform: scale(1.01);
   }
 }
 .services_section .cards_container .art_2 {
   background-color: #e38c26;
   transition: all 0.3s ease;
-  &:hover{
+  &:hover {
     transform: scale(1.01);
   }
 }
@@ -172,7 +172,7 @@
 .services_section .cards_container .art_3 {
   background-color: #007fcf;
   transition: all 0.3s ease;
-  &:hover{
+  &:hover {
     transform: scale(1.01);
   }
 }

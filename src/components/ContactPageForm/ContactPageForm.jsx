@@ -11,6 +11,7 @@ function ContactPageForm() {
           </div>
           <div>
             <form
+              id="form__home"
               className="contactPageForm__form"
               encType="multipart/form-data"
               action="https://formsubmit.co/maipudigitalmza@gmail.com"
