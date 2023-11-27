@@ -3,7 +3,7 @@ import "./contactForm.css";
 function Contact__Form() {
   return (
     <>
-      <div>
+      <div className="contact_form_container">
         <form
           action="https://formsubmit.co/maipudigitalmza@gmail.com"
           method="POST"

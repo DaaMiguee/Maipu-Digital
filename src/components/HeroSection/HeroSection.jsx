@@ -14,7 +14,7 @@ const HeroSection = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const sendSmsWsp = () => {
-        const message = "Hola, ¿hay un asesor disponible para ayudarme con mis preguntas?"
+        const message = "Hola, ¿hay un asesor disponible que pueda ayudarme?"
         const whatsappLink = `https://api.whatsapp.com/send?phone=2616815426&text=${encodeURIComponent(message)}`;
         window.open(whatsappLink);
     }
@@ -45,7 +45,7 @@ const HeroSection = () => {
                 </div>
                 <div className='button_container'>
                     <Link className='btn_1' to="#" onClick={handleShow}>Habla con nosotros</Link>
-                    <Link className='btn_2' to="#">Deja un mensaje</Link>
+                    <a className='btn_2' href="/#contactanos">Deja un mensaje</a>
                 </div>
                 <div className='users_container'>
                     <div className='users_sub_container'>
@@ -62,13 +62,11 @@ const HeroSection = () => {
                             <img src={userimg4} alt="" />
                         </div>
                         <div className='user_circle plus'>
-                            <Link to="">
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="Plus">
-                                        <path id="Vector" d="M26.25 15C26.25 15.2486 26.1512 15.4871 25.9754 15.6629C25.7996 15.8387 25.5611 15.9375 25.3125 15.9375H15.9375V25.3125C15.9375 25.5611 15.8387 25.7996 15.6629 25.9754C15.4871 26.1512 15.2486 26.25 15 26.25C14.7514 26.25 14.5129 26.1512 14.3371 25.9754C14.1613 25.7996 14.0625 25.5611 14.0625 25.3125V15.9375H4.6875C4.43886 15.9375 4.2004 15.8387 4.02459 15.6629C3.84877 15.4871 3.75 15.2486 3.75 15C3.75 14.7514 3.84877 14.5129 4.02459 14.3371C4.2004 14.1613 4.43886 14.0625 4.6875 14.0625H14.0625V4.6875C14.0625 4.43886 14.1613 4.2004 14.3371 4.02459C14.5129 3.84877 14.7514 3.75 15 3.75C15.2486 3.75 15.4871 3.84877 15.6629 4.02459C15.8387 4.2004 15.9375 4.43886 15.9375 4.6875V14.0625H25.3125C25.5611 14.0625 25.7996 14.1613 25.9754 14.3371C26.1512 14.5129 26.25 14.7514 26.25 15Z" fill="#E38C26" />
-                                    </g>
-                                </svg>
-                            </Link>
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Plus">
+                                    <path id="Vector" d="M26.25 15C26.25 15.2486 26.1512 15.4871 25.9754 15.6629C25.7996 15.8387 25.5611 15.9375 25.3125 15.9375H15.9375V25.3125C15.9375 25.5611 15.8387 25.7996 15.6629 25.9754C15.4871 26.1512 15.2486 26.25 15 26.25C14.7514 26.25 14.5129 26.1512 14.3371 25.9754C14.1613 25.7996 14.0625 25.5611 14.0625 25.3125V15.9375H4.6875C4.43886 15.9375 4.2004 15.8387 4.02459 15.6629C3.84877 15.4871 3.75 15.2486 3.75 15C3.75 14.7514 3.84877 14.5129 4.02459 14.3371C4.2004 14.1613 4.43886 14.0625 4.6875 14.0625H14.0625V4.6875C14.0625 4.43886 14.1613 4.2004 14.3371 4.02459C14.5129 3.84877 14.7514 3.75 15 3.75C15.2486 3.75 15.4871 3.84877 15.6629 4.02459C15.8387 4.2004 15.9375 4.43886 15.9375 4.6875V14.0625H25.3125C25.5611 14.0625 25.7996 14.1613 25.9754 14.3371C26.1512 14.5129 26.25 14.7514 26.25 15Z" fill="#E38C26" />
+                                </g>
+                            </svg>
                         </div>
                     </div>
                     <div className='users_desc'>

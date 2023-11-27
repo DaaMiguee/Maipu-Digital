@@ -3,31 +3,37 @@
   justify-content: center;
   margin-top: 3rem;
 }
+
 .ImprimeSection {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
-  flex-direction: column;
+  flex-direction: column-reverse;
+}
+
+.img__container {
+  width: 100%;
+  max-width: 600px;
 }
 
 #mujerImg {
-  width: 360px;
-  flex-shrink: 0;
+  width: 100%;
 }
+
 .imprime {
   color: #1e1e1e;
   font-size: 45px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 450px;
-  margin-bottom: 2rem;
+  width: 100%;
+  margin-bottom: 14px;
 }
 
 .h3__orange {
   color: #e38c26;
-  font-size: 45px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -35,13 +41,15 @@
 
 .imprime__p {
   color: #9c9c9c;
-  font-size: 1em;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-
-  width: 450px;
-  height: 100px;
+  width: 100%;
+  max-width: 500px;
+  padding: 0 20px;
+  height: auto;
+  margin-bottom: 22px;
   flex-shrink: 0;
 }
 
@@ -61,10 +69,22 @@
   justify-content: center;
   background-color: #00578e;
   color: #fff;
-  font-size: 20px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  width: 162px;
+  height: 36px;
+  padding: 20px 22px;
+  transition: all 0.3s ease;
+  &:hover{
+    background-color: #146ca3;
+    color: #FFF;
+  }
+  &:active{
+    background-color: #146ca3 !important;
+    color: #FFF !important;
+  }
 }
 
 .venta {
@@ -73,10 +93,22 @@
   justify-content: center;
   background-color: #e38c26;
   color: #fff;
-  font-size: 20px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  width: 162px;
+  height: 36px;
+  padding: 20px 22px;
+  transition: all 0.3s ease;
+  &:hover{
+    background-color: #e8a04f;
+    color: #FFF;
+  }
+  &:active{
+    background-color: #e8a04f !important;
+    color: #FFF !important;
+  }
 }
 
 .ImprimeSection__text {
@@ -86,35 +118,40 @@
   align-items: center;
 }
 
-.ImprimeSection__btn button {
-  margin: 0.5rem 0;
-  margin-right: 20px;
-}
-
 .ImprimeSection__btn {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  gap: 18px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
+  #ImprimeSection__container {
+    padding: 50px 20px 0px;
+  }
+
   #ImprimeSection__container {
     display: flex;
-    justify-content: center;
-    margin-top: 3rem;
+    justify-content: space-between;
   }
+
   .ImprimeSection {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
     flex-direction: row;
+    width: 100%;
+  }
+
+  .img__container {
+    width: 400px;
+    height: 100%;
   }
 
   #mujerImg {
-    width: 480px;
-    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
+
   .imprime {
     color: #1e1e1e;
     font-size: 64px;
@@ -123,6 +160,7 @@
     line-height: normal;
     width: 480px;
     margin-bottom: 2rem;
+    text-align: start;
   }
 
   .h3__orange {
@@ -134,15 +172,14 @@
   }
 
   .imprime__p {
+    text-align: start;
     color: #9c9c9c;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-
-    width: 590px;
-    height: 100px;
-    flex-shrink: 0;
+    padding: 0;
+    max-width: 590px;
   }
 
   .btn {
@@ -180,9 +217,10 @@
   }
 
   .ImprimeSection__text {
-    padding-left: 6rem;
+    padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .ImprimeSection__btn button {
@@ -196,5 +234,24 @@
     flex-direction: row;
   }
 }
+
 @media (min-width: 1200px) {
+  #ImprimeSection__container {
+    padding: 20px 120px 0;
+  }
+
+  .ImprimeSection__text {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1300px) {
+  #ImprimeSection__container {
+    padding: 20px 100px 0;
+  }
+
+  .ImprimeSection {
+    gap: 100px;
+  }
 }

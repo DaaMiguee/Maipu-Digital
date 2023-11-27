@@ -36,9 +36,7 @@ function ServicesPage() {
           title="Accesorios de vanguardia"
           paragraph="Contamos con una amplia gama de productos, insumos y accesorios que van amejorar tu experiencia tecnológica."
         />
-        <button className="services__btn__contactanos">
-          <p className="services__btn__p">Contáctanos</p>
-        </button>
+        <a className="services__btn__contactanos" href="/contacto">Contáctanos</a>
       </div>
     </>
   );

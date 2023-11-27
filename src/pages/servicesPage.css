@@ -39,6 +39,8 @@
 }
 
 .services__btn__contactanos {
+  text-decoration: none;
+  color: #FFF;
   display: flex;
   width: 230px;
   height: 50px;
@@ -50,16 +52,10 @@
   border: none;
   margin-top: 20px;
   margin-bottom: 30px;
-}
-
-.services__btn__p {
-  color: #fff;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-
-  margin-bottom: 0;
+  transition: all 0.3s ease;
+  &:hover{
+    background-color: #e8a04f;
+  }
 }
 
 @media (min-width: 720px) {

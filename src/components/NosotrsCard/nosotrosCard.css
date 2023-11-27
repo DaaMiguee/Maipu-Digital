@@ -3,6 +3,10 @@
   display: flex;
   margin-top: 25px;
   margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+.nosotrosCard__container:hover{
+  transform: scale(1.01);
 }
 
 .nosotrosCard__img__container {
@@ -12,6 +16,11 @@
   display: flex;
   margin-top: 25px;
   margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+.nosotrosCard__container__izq:hover{
+  transform: scale(1.01);
+
 }
 .nosotrosCard__content__izq {
   align-items: center;

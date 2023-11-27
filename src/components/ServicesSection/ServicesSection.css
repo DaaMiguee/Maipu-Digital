@@ -116,9 +116,8 @@
   justify-content: center;
   align-items: center;
   transition: background-color 0.3s ease;
-
   &:hover {
-    background-color: rgba(255, 255, 255, 0.687);
+    background-color: rgba(255, 255, 255, 0.595);
   }
 }
 
@@ -157,14 +156,25 @@
 
 .services_section .cards_container .art_1 {
   background-color: #007fcf;
+  transition: all 0.3s ease;
+  &:hover{
+    transform: scale(1.01);
+  }
 }
-
 .services_section .cards_container .art_2 {
   background-color: #e38c26;
+  transition: all 0.3s ease;
+  &:hover{
+    transform: scale(1.01);
+  }
 }
 
 .services_section .cards_container .art_3 {
   background-color: #007fcf;
+  transition: all 0.3s ease;
+  &:hover{
+    transform: scale(1.01);
+  }
 }
 
 @media screen and (max-width: 1600px) {

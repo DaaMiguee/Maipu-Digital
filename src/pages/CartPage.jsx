@@ -6,7 +6,6 @@ import Loader from '../components/Loader/Loader'
 
 const CartPage = () => {
     const { loading } = useContext(ProductsContext);
-
     return (
         <section>
             {loading ? <Loader /> :
