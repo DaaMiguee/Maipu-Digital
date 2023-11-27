@@ -1,7 +1,15 @@
 import Map from "../Map/Map";
 import "./contactPageFormStyle.css";
-
+import Swal from "sweetalert2";
 function ContactPageForm() {
+  function formularioEnviado() {
+    Swal.fire({
+      title: "¡Consulta enviada!",
+      text: "¡Responderemos a tu consulta en breve!",
+      icon: "success",
+    });
+  }
+
   return (
     <>
       <div className="contacPageForm__layout">
@@ -72,7 +80,13 @@ function ContactPageForm() {
               </div>
 
               <div className="contactPageForm">
-                <button className="contactPageForm__btn" type="submit">
+                <button
+                  className="contactPageForm__btn"
+                  type="submit"
+                  onClick={() => {
+                    formularioEnviado();
+                  }}
+                >
                   <span className="contactPageForm__btn__span">
                     Enviar mensaje
                   </span>

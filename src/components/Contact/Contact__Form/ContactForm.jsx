@@ -1,6 +1,13 @@
 import "./contactForm.css";
-
+import Swal from "sweetalert2";
 function Contact__Form() {
+  function formularioEnviado() {
+    Swal.fire({
+      title: "¡Consulta enviada!",
+      text: "¡Responderemos a tu consulta en breve!",
+      icon: "success",
+    });
+  }
   return (
     <>
       <div className="contact_form_container">
@@ -50,7 +57,13 @@ function Contact__Form() {
               value="https://maipudigital.netlify.app/"
             ></input>
             <input type="hidden" name="_captcha" value="false"></input>
-            <button type="submit" className="enviar">
+            <button
+              type="submit"
+              className="enviar"
+              onClick={() => {
+                formularioEnviado();
+              }}
+            >
               Enviar mensaje
             </button>
           </div>
