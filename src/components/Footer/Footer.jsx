@@ -7,7 +7,9 @@ function Footer() {
         <div className="Footer__columnas">
           {/* primera columna */}
           <div className="Footer__columna__uno">
-            <a href="/"><img src={logo} id="maipu__logo" alt="logo de maipu digital" /></a>
+            <a href="/">
+              <img src={logo} id="maipu__logo" alt="logo de maipu digital" />
+            </a>
 
             <p className="maipu__text__derechos">
               Derechos reservados © 2023 Maipú Digital. Todos los derechos
@@ -44,10 +46,18 @@ function Footer() {
             <div className="navegacion">
               <h3 className="navegacion__h3">Navegacion</h3>
               <ul className="footer__ul">
-                <a href="/"><li className="footer__li">Inicio</li></a>
-                <a href="/servicios"><li className="footer__li">Servicios</li></a>
-                <a href="/productos"><li className="footer__li">Productos</li></a>
-                <a href="/contacto"><li className="footer__li">Contáctanos</li></a>
+                <a href="/">
+                  <li className="footer__li">Inicio</li>
+                </a>
+                <a href="/servicios">
+                  <li className="footer__li">Servicios</li>
+                </a>
+                <a href="/productos">
+                  <li className="footer__li">Productos</li>
+                </a>
+                <a href="/contacto">
+                  <li className="footer__li">Contáctanos</li>
+                </a>
               </ul>
             </div>
             {/* lista 2 */}
@@ -56,7 +66,7 @@ function Footer() {
               <ul className="footer__ul">
                 <li className="footer__li">261-6815426</li>
                 <li className="footer__li">+54 261-6815426</li>
-                <li className="footer__li">romerocybertec@gmail.com</li>
+                <li className="footer__li">maipudigitalmza@gmail.com</li>
                 <li className="footer__li">Padre Vazquez N° 297 de Maipú</li>
               </ul>
             </div>
