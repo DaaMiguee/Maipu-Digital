@@ -1,0 +1,126 @@
+.services__container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.services__hr {
+  width: 400px;
+  height: 2px;
+  margin-top: 20px;
+  background-color: #00578e;
+  display: none;
+}
+
+.services__title {
+  margin-top: 45px;
+  color: #00578e;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.services__title__orange {
+  margin-top: 45px;
+  color: #e38c26;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.title__line {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.services__btn__contactanos {
+  text-decoration: none;
+  color: #FFF;
+  display: flex;
+  width: 230px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #e38c26;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  &:hover{
+    background-color: #e8a04f;
+  }
+}
+
+@media (min-width: 720px) {
+  .services__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services__hr {
+    display: block;
+    width: 600px;
+    height: 2px;
+    margin-top: 20px;
+    background-color: #00578e;
+  }
+
+  .services__title {
+    margin-top: 45px;
+    color: #00578e;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .services__title__orange {
+    margin-top: 45px;
+    color: #e38c26;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .title__line {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .services__btn__contactanos {
+    display: flex;
+    width: 230px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #e38c26;
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
+  .services__btn__p {
+    color: #fff;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services__hr {
+    width: 1000px;
+  }
+}

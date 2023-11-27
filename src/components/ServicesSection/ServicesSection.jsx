@@ -3,7 +3,6 @@ import './ServicesSection.css'
 import serv_accesorios from '../../images/serv_accesorios.png'
 import serv_celulares from '../../images/serv-celulares.png'
 import serv_computadoras from '../../images/serv-computadoras.png'
-import { Link } from 'react-router-dom'
 const ServicesSection = () => {
     const ArrowUpRight = (
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -25,9 +24,9 @@ const ServicesSection = () => {
                 <article className='article art_1'>
                     <section className='art_header'>
                         <h3>Computadoras</h3>
-                        <Link to="#">
+                        <a href="/servicios">
                             {ArrowUpRight}
-                        </Link>
+                        </a>
                     </section>
                     <div className='line2'></div>
                     <section className='art_main'>
@@ -40,9 +39,9 @@ const ServicesSection = () => {
                 <article className='article art_2'>
                     <section className='art_header'>
                         <h3>Celulares</h3>
-                        <Link to="#">
+                        <a href="/servicios">
                             {ArrowUpRight}
-                        </Link>
+                        </a>
                     </section>
                     <div className='line2'></div>
                     <section className='art_main'>
@@ -55,9 +54,9 @@ const ServicesSection = () => {
                 <article className='article art_3'>
                     <section className='art_header'>
                         <h3>Accesorios</h3>
-                        <Link to="#">
+                        <a href="/productos">
                             {ArrowUpRight}
-                        </Link>
+                        </a>
                     </section>
                     <div className='line2'></div>
                     <section className='art_main'>

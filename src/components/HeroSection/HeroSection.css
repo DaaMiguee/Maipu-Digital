@@ -90,7 +90,7 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-        background-color: #e8993f;
+        background-color: #e8a04f;
     }
 }
 
@@ -106,7 +106,7 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-        background-color: #2e2e2e;
+        background-color: #343434;
     }
 }
 
