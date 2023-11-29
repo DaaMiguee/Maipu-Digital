@@ -34,7 +34,7 @@ function ServicesPage() {
         <NosotrosCard
           image={card_four}
           title="Accesorios de vanguardia"
-          paragraph="Contamos con una amplia gama de productos, insumos y accesorios que van amejorar tu experiencia tecnológica."
+          paragraph="Contamos con una amplia gama de productos, insumos y accesorios que van a mejorar tu experiencia tecnológica."
         />
         <a className="services__btn__contactanos" href="/contacto">Contáctanos</a>
       </div>
