@@ -10,7 +10,7 @@ function NosotrosCard({ image, title, paragraph, izq }) {
           </div>
           <div className="nosotrosCard__content__izq">
             <h3 className="nosotrosCard__title">{title}</h3>
-            <hr className="nosotrosCard__hr" />
+
             <p className="nosotrosCard__paragraph">{paragraph}</p>
           </div>
         </div>
@@ -20,7 +20,7 @@ function NosotrosCard({ image, title, paragraph, izq }) {
             <h3 className="nosotrosCard__title nosotrosCard__title__der">
               {title}
             </h3>
-            <hr className="nosotrosCard__hr" />
+
             <p className="nosotrosCard__paragraph nosotrosCard__paragraph__der">
               {paragraph}
             </p>
