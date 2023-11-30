@@ -40,7 +40,7 @@ const HeroSection = () => {
                         <h1><span>Servicio</span> Técnico y venta de insumos</h1>
                     </div>
                     <div className='text_subtitle'>
-                        <p>En Maipú Digital, somos tu aliado confiable.</p>
+                        <p className='text_1'>En Maipú Digital, cuidamos tus dispositivos con reparaciones de calidad y técnicas avanzadas.</p>
                     </div>
                 </div>
                 <div className='button_container'>

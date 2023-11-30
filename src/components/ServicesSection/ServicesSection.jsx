@@ -1,8 +1,8 @@
 import React from 'react'
 import './ServicesSection.css'
-import serv_accesorios from '../../images/serv_accesorios.png'
-import serv_celulares from '../../images/serv-celulares.png'
-import serv_computadoras from '../../images/serv-computadoras.png'
+import serv_accesorios from '../../images/serv_accesorios.webp'
+import serv_celulares from '../../images/serv_celulares.webp'
+import serv_computadoras from '../../images/serv_computadoras.webp'
 const ServicesSection = () => {
     const ArrowUpRight = (
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">

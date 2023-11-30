@@ -40,7 +40,7 @@
 
 .hero_section .content_block .text_container .text_title h1 span {
     display: block;
-    color: #000;
+    color: #00578E;
     font-size: 72px;
     font-style: normal;
     font-weight: 600;
@@ -51,6 +51,7 @@
     width: 470px;
     height: 26px;
     flex-shrink: 0;
+    position: relative;
 }
 
 .hero_section .content_block .text_container .text_subtitle p {
@@ -468,6 +469,7 @@
         font-size: 12px;
     }
 
+
     .hero_section .content_block .users_container {
         display: none;
     }
@@ -589,3 +591,13 @@
         transform: translateX(0);
     }
 }
+/* @keyframes opacity{
+    from{ 
+        display: block;
+        opacity: 1;
+    }
+    to{
+        display: none;
+        opacity: 0;
+    }
+} */

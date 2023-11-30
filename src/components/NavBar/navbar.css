@@ -9,6 +9,10 @@
     padding-right: 120px;
     position: relative;
 }
+.nav_bar .logo_container svg{
+    height: 80px;
+    width: 110px;
+}
 .nav_bar .my_collapse .navbar_ul{
     display: flex;
     gap: 30px;
@@ -86,6 +90,10 @@
         padding-left: 96px;
         padding-right: 96px;
     }
+    .nav_bar .logo_container svg{
+        height: 70px;
+        width: 100px;
+    }
     .nav_bar .my_collapse .navbar_ul .nav_bnt_contact{
         right: 160px;
     }
@@ -100,8 +108,12 @@
     .nav_bar .logo_container{
         position: absolute;
         top: 18px;
+        top: 5px;
         left: 50%;
         transform: translateX(-50%);
+    }
+    .nav_bar .logo_container svg{
+        width: 80px;
     }
     .nav_bar .my_collapse .navbar_ul .nav_bnt_contact{
         /* position:static; */
@@ -219,9 +231,9 @@
 }
 @media screen and (max-width :600px ){
     .nav_bar .logo_container{
-        top: 23px;
+        top: 4px;
     }
     .nav_bar .logo_container svg{
-        height: 30px;
+        width: 70px;
     }
 }
