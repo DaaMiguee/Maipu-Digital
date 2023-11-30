@@ -170,6 +170,9 @@
 @media (min-width: 1200px) {
   .nosotrosCard__img__container {
     display: block;
+  }
+
+  .nosotrosCard__img {
     border-radius: 30px;
   }
   .nosotrosCard__container {

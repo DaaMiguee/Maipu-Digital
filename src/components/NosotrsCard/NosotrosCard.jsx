@@ -6,7 +6,11 @@ function NosotrosCard({ image, title, paragraph, izq }) {
       {izq ? (
         <div className="nosotrosCard__container__izq">
           <div className="nosotrosCard__img__container">
-            <img src={image} alt={"Técnico reparando"} />
+            <img
+              src={image}
+              className="nosotrosCard__img"
+              alt={"Técnico reparando"}
+            />
           </div>
           <div className="nosotrosCard__content__izq">
             <h3 className="nosotrosCard__title">{title}</h3>
